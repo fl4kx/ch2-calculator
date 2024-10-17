@@ -48,7 +48,7 @@ public class Calculator {
         return getResult();
     }
 
-    // private resultQueue 의 getter 와 setter 메서드
+    // private resultStack 의 getter 와 setter 메서드
     private void putResult(int result) {
         resultStack.add(result);
     }
