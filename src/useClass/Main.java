@@ -27,6 +27,10 @@ public class Main {
 
         // getter 메서드로 private 필드 접근
         System.out.println(cal.getResult());
+        cal.addValue(24);
+        System.out.println(cal.getResult());
+        cal.removeHistory();
+        System.out.println(cal.getResult());
 
     }
 }
