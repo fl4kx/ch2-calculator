@@ -21,6 +21,7 @@ public class Calculator {
      * @param userInput 유저로 부터 입력받은 문자열 형태의 수식
      * @return 사칙연산 결과
      */
+
     public int calculate(String userInput) {
         String[] parserTemp = userInput.split(" ");
         ArrayList<String> parsedExpression = new ArrayList<>(Arrays.asList(parserTemp));
@@ -70,10 +71,9 @@ public class Calculator {
 
     /**
      * {@link #resultStack} 의 Setter 메서드로 {@code Top} 을 제거합니다.
-     *
      */
     public void removeHistory() {
-        if (!resultStack.isEmpty() ) {
+        if (!resultStack.isEmpty()) {
             resultStack.pop();
         }
     }
