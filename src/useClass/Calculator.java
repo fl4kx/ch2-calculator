@@ -71,7 +71,6 @@ public class Calculator {
     /**
      * {@link #resultStack} 의 Setter 메서드로 {@code Top} 을 제거합니다.
      *
-     * @throws {@link #resultStack} 이 비어있는 경우 예외가 발생합니다.
      */
     public void removeHistory() {
         if (!resultStack.isEmpty() ) {
