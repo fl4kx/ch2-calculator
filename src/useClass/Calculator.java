@@ -30,13 +30,13 @@ public class Calculator {
         String operator = parsedExpression.remove(0);
         int rightNum = Integer.parseInt(parsedExpression.remove(0));
 
-        if (operator.equals("+")) {
+        if ("+".equals(operator)) {
             add(leftNum, rightNum);
-        } else if (operator.equals("-")) {
+        } else if ("-".equals(operator)) {
             subtract(leftNum, rightNum);
-        } else if (operator.equals("/")) {
+        } else if ("/".equals(operator)) {
             division(leftNum, rightNum);
-        } else if (operator.equals("*")) {
+        } else if ("*".equals(operator)) {
             multiply(leftNum, rightNum);
         }
 
@@ -113,7 +113,7 @@ public class Calculator {
         putResult(result);
     }
 
-    /**
+    /*
      * 두 숫자를 곱셈 하고 {@link #resultStack} 에 저장합니다.
      *
      * @param x 식의 좌항
